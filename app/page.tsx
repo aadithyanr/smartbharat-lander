@@ -1,113 +1,121 @@
-import Image from "next/image";
+import Link from "next/link"
+import { SmartBharatAscii } from "./components/SmartBharatAscii"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main className="mx-auto max-w-[640px] px-6 py-20">
+      <SmartBharatAscii />
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+      <div className="space-y-12 text-sm leading-relaxed">
+        <section>
+          <h1 className="text-lg font-bold text-blue-400">SmartBharat</h1>
+          <p className="mt-4">
+            We're democratising computer education for India's government school students through AI-powered localized
+            learning.
           </p>
-        </a>
+        </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+        <section>
+          <h2 className="font-bold">The Problem</h2>
+          <p className="mt-4">
+            Of the 1.1 million government schools in India, only 35.8% have access to functional computers. The vast
+            majority of students are unable to leverage these labs due to a glaring absence of computer teachers.
           </p>
-        </a>
+          <p className="mt-4">Three key challenges prevent schools from employing computer educators:</p>
+          <ul className="mt-2 list-inside list-disc space-y-1">
+            <li>Need for IT proficiency - a niche skill in rural settings</li>
+            <li>Budget constraints from the Education Ministry</li>
+            <li>Local language fluency requirement due to limited English skills</li>
+          </ul>
+        </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <section>
+          <h2 className="font-bold">Our Solution</h2>
+          <p className="mt-4">SmartBharat is a gamified platform that democratizes computer education through:</p>
+          <ul className="mt-2 list-inside list-disc space-y-1">
+            <li>AI-powered content dubbing into local languages</li>
+            <li>Gamified learning with real-time assessments</li>
+            <li>Train-the-trainer model for sustainability</li>
+            <li>Local-language AI chatbot for student support</li>
+          </ul>
+        </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+        <section>
+          <h2 className="font-bold">Impact & Metrics</h2>
+          <div className="mt-4 grid gap-4">
+            <div className="border border-blue-800 p-4">
+              <div className="text-lg font-bold text-blue-400">2</div>
+              <div className="mt-1 text-neutral-400">Successful pilot programs in Telangana schools</div>
+            </div>
+            <div className="border border-blue-800 p-4">
+              <div className="text-lg font-bold text-blue-400">75%</div>
+              <div className="mt-1 text-neutral-400">Average accuracy in student assessments</div>
+            </div>
+            <div className="border border-blue-800 p-4">
+              <div className="text-lg font-bold text-blue-400">14,000+</div>
+              <div className="mt-1 text-neutral-400">Schools targeted for pan-India expansion</div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="font-bold">Key Differentiators</h2>
+          <div className="mt-4 space-y-4">
+            <div>
+              <h3 className="text-blue-400">1. Localized</h3>
+              <p className="mt-2">
+                Using advanced AI dubbing technology to translate content into regional languages naturally and
+                efficiently. Our solution handles complex computer concepts while maintaining colloquial understanding.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-blue-400">2. Easy to Understand</h3>
+              <p className="mt-2">
+                Python programming taught through familiar cooking metaphors. Universal concepts help bridge the gap
+                between traditional knowledge and modern programming.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-blue-400">3. Gamified</h3>
+              <p className="mt-2">
+                Real-time quizzes, interactive components, and point-based progression create healthy competition and
+                engagement. Integrated simulations allow practical application of concepts.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-blue-400">4. Scalable</h3>
+              <p className="mt-2">
+                Train-the-trainer model ensures sustainability. Existing teachers become SmartBharat facilitators
+                through our platform and bi-weekly support sessions.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="font-bold">Recognition</h2>
+          <ul className="mt-4 list-inside list-disc space-y-1">
+            <li>Nord Anglia Social Impact R&D Grant recipient (USD 3000)</li>
+            <li>Felicitated by Secretary of Telangana Board of Intermediate Education</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="font-bold">Get Involved</h2>
+          <p className="mt-4">Working on democratizing education in India? Want to support our mission?</p>
+          <p className="mt-4">
+            <Link href="#" className="text-blue-400 underline hover:text-blue-300">
+              Fill out this form
+            </Link>
+            . We'll get back to you via email.
           </p>
-        </a>
+        </section>
+
+        <footer className="pt-8 text-neutral-400">
+          <p>© 2024 SmartBharat. Democratising computer education for a smarter India.</p>
+        </footer>
       </div>
     </main>
-  );
+  )
 }
+
