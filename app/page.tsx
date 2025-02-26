@@ -10,7 +10,7 @@ export default function Home() {
         <section>
           <h1 className="text-lg font-bold text-blue-400">SmartBharat</h1>
           <p className="mt-4">
-            We're democratising computer education for India's government school students through AI-powered localized
+            We&apos;re democratising computer education for India&apos;s government school students through AI-powered localized
             learning.
           </p>
         </section>
@@ -107,7 +107,7 @@ export default function Home() {
             <Link href="#" className="text-blue-400 underline hover:text-blue-300">
               Fill out this form
             </Link>
-            . We'll get back to you via email.
+            . We&apos; get back to you via email.
           </p>
         </section>
 
