@@ -36,6 +36,8 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --font-mono: var(--font-geist-mono), monospace;
+    --font-urbanist: var(--font-urbanist), sans-serif;
   }
   .dark {
     --background: 240 10% 3.9%;
@@ -63,6 +65,7 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+  
 }
 
 
@@ -73,6 +76,18 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  
+  /* Apply font-family utility classes */
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  
+  .font-urbanist {
+    font-family: var(--font-urbanist);
   }
 }
 
