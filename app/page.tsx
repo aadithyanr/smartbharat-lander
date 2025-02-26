@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-[720px] px-6 py-20">
       <div className="space-y-16 leading-relaxed">
-        <section className="">
+        <section className="text-center items-center flex justify-center flex-col">
           {/* <h1 className="font-urbanist text-3xl font-bold text-[#B29FFF] tracking-wide">
             Smart<span className="text-gradient">Bharat</span>
           </h1> */}
           <Image src="sb_logo.svg" width={200} height={600} alt="SmartBharat Logo" />
-          <p className="mt-4 font-urbanist text-lg max-w-[560px] text-[#AEAEAE]">
+          <p className="mt-4 font-urbanist text-lg  max-w-[560px] text-[#AEAEAE]">
             We&apos;re democratising computer education for India&apos;s government school students through AI-powered localized
             learning.
           </p>
