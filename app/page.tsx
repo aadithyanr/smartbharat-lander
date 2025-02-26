@@ -4,8 +4,6 @@ import { SmartBharatAscii } from "./components/SmartBharatAscii"
 export default function Home() {
   return (
     <main className="mx-auto max-w-[720px] px-6 py-20">
-      <SmartBharatAscii />
-
       <div className="space-y-16 leading-relaxed">
         <section className="text-center">
           <h1 className="font-urbanist text-3xl font-bold text-[#B29FFF] tracking-wide">
