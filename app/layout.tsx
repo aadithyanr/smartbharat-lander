@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(
-        "min-h-screen bg-[#111] text-neutral-200 font-mono antialiased",
+        "min-h-screen bg-[#050616] text-neutral-200 font-mono antialiased",
         GeistMono.variable
       )}>
         {children}

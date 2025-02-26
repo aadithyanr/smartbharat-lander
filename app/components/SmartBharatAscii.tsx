@@ -31,7 +31,7 @@ export function SmartBharatAscii() {
       <div className="ascii-container">
         <pre 
           ref={asciiTextRef as any}
-          className="text-blue-400 font-mono mx-auto"
+          className="text-[#B29FFF] font-mono mx-auto"
         ></pre>
       </div>
     </div>
