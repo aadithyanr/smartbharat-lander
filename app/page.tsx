@@ -1,15 +1,17 @@
 import Link from "next/link"
 import { SmartBharatAscii } from "./components/SmartBharatAscii"
+import Image from "next/image"
 
 export default function Home() {
   return (
     <main className="mx-auto max-w-[720px] px-6 py-20">
       <div className="space-y-16 leading-relaxed">
-        <section className="text-center">
-          <h1 className="font-urbanist text-3xl font-bold text-[#B29FFF] tracking-wide">
+        <section className="">
+          {/* <h1 className="font-urbanist text-3xl font-bold text-[#B29FFF] tracking-wide">
             Smart<span className="text-gradient">Bharat</span>
-          </h1>
-          <p className="mt-4 font-urbanist text-lg max-w-[560px] mx-auto text-foreground/90">
+          </h1> */}
+          <Image src="sb_logo.svg" width={200} height={600} alt="SmartBharat Logo" />
+          <p className="mt-4 font-urbanist text-lg max-w-[560px] text-[#AEAEAE]">
             We&apos;re democratising computer education for India&apos;s government school students through AI-powered localized
             learning.
           </p>
